@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:background="#DD6CB1"
+        android:text="Nhập link website"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtlink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnopen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SHOW WEBSITE" />
+</LinearLayout>
