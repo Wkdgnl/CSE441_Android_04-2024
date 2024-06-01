@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Activities.CategoryActivity">
+
+    <ImageView
+        android:id="@+id/imageBackSearchCategory"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chevronleft60" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="Book"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/ngontinhBtn"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/category_background"
+                android:text="Ngôn Tình"
+                android:textColor="#000000"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toTopOf="@+id/haihuocBtn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/nguocBtn"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/category_background"
+                android:text="Ngược"
+                android:textColor="#000000"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ngontinhBtn"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/haihuocBtn"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/category_background"
+                android:text="Hài Hước"
+                android:textColor="#000000"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toTopOf="@+id/hiendaiBtn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ngontinhBtn" />
+
+            <Button
+                android:id="@+id/dothiBtn"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="17dp"
+                android:background="@drawable/category_background"
+                android:text="Đô Thị"
+                android:textColor="#000000"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/haihuocBtn"
+                app:layout_constraintTop_toBottomOf="@+id/nguocBtn" />
+
+            <Button
+                android:id="@+id/hiendaiBtn"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/category_background"
+                android:text="Hiện Đại"
+                android:textColor="#000000"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toTopOf="@+id/xuyennhanhBtn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/haihuocBtn" />
+
+            <Button
+                android:id="@+id/xuyenkhongBtn"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="17dp"
+                android:background="@drawable/category_background"
+                android:text="Xuyên Không"
+                android:textColor="#000000"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/hiendaiBtn"
+                app:layout_constraintTop_toBottomOf="@+id/dothiBtn" />
+
+            <Button
+                android:id="@+id/xuyennhanhBtn"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/category_background"
+                android:text="Xuyên Nhanh"
+                android:textColor="#000000"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toTopOf="@+id/kiemhiepBtn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/hiendaiBtn" />
+
+            <Button
+                android:id="@+id/truyenteenBtn"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="17dp"
+                android:background="@drawable/category_background"
+                android:text="Truyện Teen"
+                android:textColor="#000000"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/xuyennhanhBtn"
+                app:layout_constraintTop_toBottomOf="@+id/xuyenkhongBtn" />
+
+            <Button
+                android:id="@+id/kiemhiepBtn"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/category_background"
+                android:text="Kiếm Hiệp"
+                android:textColor="#000000"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toTopOf="@+id/mattheBtn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/xuyennhanhBtn" />
+
+            <Button
+                android:id="@+id/tienhiepBtn"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="18dp"
+                android:background="@drawable/category_background"
+                android:text="Tiên Hiệp"
+                android:textColor="#000000"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/kiemhiepBtn"
+                app:layout_constraintTop_toBottomOf="@+id/truyenteenBtn" />
+
+            <Button
+                android:id="@+id/mattheBtn"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/category_background"
+                android:text="Mạt Thế"
+                android:textColor="#000000"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toTopOf="@+id/giadauBtn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/kiemhiepBtn" />
+
+            <Button
+                android:id="@+id/cungdauBtn"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="18dp"
+                android:background="@drawable/category_background"
+                android:text="Cung đấu"
+                android:textColor="#000000"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/mattheBtn"
+                app:layout_constraintTop_toBottomOf="@+id/tienhiepBtn" />
+
+            <Button
+                android:id="@+id/giadauBtn"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/category_background"
+                android:text="Gia Đấu"
+                android:textColor="#000000"
+                app:backgroundTint="@null"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mattheBtn" />
+
+            <Button
+                android:id="@+id/niendaiBtn"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="17dp"
+                android:background="@drawable/category_background"
+                android:text="Niên Đại"
+                android:textColor="#000000"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/giadauBtn"
+                app:layout_constraintTop_toBottomOf="@+id/cungdauBtn" />
+
+            <Button
+                android:id="@+id/codaiBtn"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/category_background"
+                android:text="Cổ Đại"
+                android:textColor="#000000"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toTopOf="@+id/trinhthamBtn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/giadauBtn" />
+
+            <Button
+                android:id="@+id/dienvanBtn"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="27dp"
+                android:background="@drawable/category_background"
+                android:text="Điền Văn"
+                android:textColor="#000000"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/codaiBtn"
+                app:layout_constraintTop_toBottomOf="@+id/niendaiBtn" />
+
+            <Button
+                android:id="@+id/trinhthamBtn"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/category_background"
+                android:text="Trinh Thám"
+                android:textColor="#000000"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toTopOf="@+id/trongsinhBtn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/codaiBtn" />
+
+            <Button
+                android:id="@+id/dinangBtn"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="27dp"
+                android:background="@drawable/category_background"
+                android:text="Dị Năng"
+                android:textColor="#000000"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/trinhthamBtn"
+                app:layout_constraintTop_toBottomOf="@+id/dienvanBtn" />
+
+            <Button
+                android:id="@+id/digioiBtn"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="27dp"
+                android:background="@drawable/category_background"
+                android:text="Dị Giới"
+                android:textColor="#000000"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/vongduBtn"
+                app:layout_constraintTop_toBottomOf="@+id/linhdiBtn" />
+
+            <Button
+                android:id="@+id/vongduBtn"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/category_background"
+                android:text="Võng Du"
+                android:textColor="#000000"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toTopOf="@+id/haogiathemonBtn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/trongsinhBtn" />
+
+            <Button
+                android:id="@+id/linhdiBtn"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="27dp"
+                android:background="@drawable/category_background"
+                android:text="Linh Dị"
+                android:textColor="#000000"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/trongsinhBtn"
+                app:layout_constraintTop_toBottomOf="@+id/dinangBtn" />
+
+            <Button
+                android:id="@+id/trongsinhBtn"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/category_background"
+                android:text="Trọng Sinh"
+                android:textColor="#000000"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toTopOf="@+id/vongduBtn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/trinhthamBtn" />
+
+            <Button
+                android:id="@+id/quansuBtn"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/category_background"
+                android:text="Quân Sự"
+                android:textColor="#000000"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/thamhiemBtn" />
+
+            <Button
+                android:id="@+id/lichsuBtn"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="27dp"
+                android:background="@drawable/category_background"
+                android:text="Lịch Sử"
+                android:textColor="#000000"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/thamhiemBtn"
+                app:layout_constraintTop_toBottomOf="@+id/huyenhuyenBtn" />
+
+            <Button
+                android:id="@+id/thamhiemBtn"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/category_background"
+                android:text="Thám Hiểm"
+                android:textColor="#000000"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toTopOf="@+id/quansuBtn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/khoahuyenBtn" />
+
+            <Button
+                android:id="@+id/huyenhuyenBtn"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="27dp"
+                android:background="@drawable/category_background"
+                android:text="Huyền Huyễn"
+                android:textColor="#000000"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/khoahuyenBtn"
+                app:layout_constraintTop_toBottomOf="@+id/hethongBtn" />
+
+            <Button
+                android:id="@+id/khoahuyenBtn"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/category_background"
+                android:text="Khoa Huyền"
+                android:textColor="#000000"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toTopOf="@+id/thamhiemBtn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tieuthuyetBtn" />
+
+            <Button
+                android:id="@+id/hethongBtn"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="27dp"
+                android:background="@drawable/category_background"
+                android:text="Hệ Thống"
+                android:textColor="#000000"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tieuthuyetBtn"
+                app:layout_constraintTop_toBottomOf="@+id/phuongtayBtn" />
+
+            <Button
+                android:id="@+id/phuongtayBtn"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="27dp"
+                android:background="@drawable/category_background"
+                android:text="Phương Tây"
+                android:textColor="#000000"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/vietnamBtn"
+                app:layout_constraintTop_toBottomOf="@+id/doanvanBtn" />
+
+            <Button
+                android:id="@+id/vietnamBtn"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/category_background"
+                android:text="Việt Nam"
+                android:textColor="#000000"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toTopOf="@+id/tieuthuyetBtn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/haogiathemonBtn" />
+
+            <Button
+                android:id="@+id/doanvanBtn"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="27dp"
+                android:background="@drawable/category_background"
+                android:text="Đoản Văn"
+                android:textColor="#000000"
+                app:backgroundTint="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/haogiathemonBtn"
+                app:layout_constraintTop_toBottomOf="@+id/digioiBtn" />
+
+            <Button
+                android:id="@+id/haogiathemonBtn"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/category_background"
+                android:text="Hào Gia Thế Môn"
+                android:textColor="#000000"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toTopOf="@+id/vietnamBtn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vongduBtn" />
+
+            <Button
+                android:id="@+id/tieuthuyetBtn"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/category_background"
+                android:text="Tiểu Thuyết"
+                android:textColor="#000000"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toTopOf="@+id/khoahuyenBtn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vietnamBtn" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
