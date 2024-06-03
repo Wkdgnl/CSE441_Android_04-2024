@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Login_Register_Firebase</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="register">Register</string>
+    <string name="ng_nh_p">Đăng nhập</string>
+    <string name="ng_k">Đăng ký</string>
+    <string name="logout">LOGOUT</string>
+</resources>
